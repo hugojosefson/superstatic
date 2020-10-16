@@ -16,7 +16,11 @@ const fsProvider = require("../../../lib/providers/fs");
 const Responder = require("../../../lib/responder");
 
 const basePathConfigs = [
-  ["", "static server with trailing slash customization"]
+  ["", "static server with trailing slash customization"],
+  [
+    "/base/path",
+    "static server under base path, with trailing slash customization"
+  ]
 ];
 
 basePathConfigs.forEach(([basePath, testTitle]) => {
